@@ -1,0 +1,47 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+    background: #777;
+    background: url('https://la-wit.github.io/build-an-infinite-runner/build/images/bg.png') repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+  }
+  canvas {
+    width: 100%!important;
+    height: 100%!important;
+  }
+  .loading-screen {
+    background: black;
+    width: 100%;
+    height: 100%;
+    color: white;
+    position: absolute; 
+    top: 50%;
+     left: 50%;
+    font-size: 2rem;
+     transform: translate(-50%, -50%); 
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+  }
+  .loading-screen p {
+    animation: pulse 1s linear 2s infinite alternate;
+  }
+  @-webkit-keyframes pulse {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @keyframes pulse {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
